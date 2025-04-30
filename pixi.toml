@@ -1,0 +1,45 @@
+[workspace]
+authors = ["Linh-Ice <1471580435@qq.com>"]
+channels = [
+  "https://prefix.dev/meta-forge",
+  "conda-forge",
+]
+
+name = "verl"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+
+[system-requirements]
+cuda = "12.4"
+
+
+[dependencies]
+python = "3.10.*"
+accelerate = "*"
+codetiming = "*"
+datasets = "*"
+flash-attn = ">=2.7.4.post1,<3"
+numpy = "*"
+omegaconf = "*"
+pandas = "*"
+peft = "*"
+pillow = "*"
+pyarrow = ">=15.0.0"
+pylatexenc = "*"
+qwen-vl-utils = "*"
+tensordict = "*"
+torchdata = "*"
+transformers = ">=4.49.0"
+vllm = ">=0.7.3"
+wandb = "*"
+ray-default = "*"
+tensorboard = ">=2.19.0,<3"
+
+[pypi-dependencies]
+liger-kernel = "*"
+mathruler = "*"
+verl = { path = ".", editable = true }
+
