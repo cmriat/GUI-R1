@@ -52,7 +52,7 @@ def main():
         package_dir={"": "."},
         packages=find_packages(where="."),
         python_requires=">=3.9.0",
-        install_requires=get_requires(),
+        # install_requires=get_requires(),
         extras_require=extra_require,
     )
 

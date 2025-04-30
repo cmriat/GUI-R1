@@ -185,7 +185,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/httptools-0.6.4-py310ha75aee5_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/httpx-0.28.1-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/huggingface_hub-0.30.2-pyhd8ed1ab_0.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/hydra-core-1.3.2-pyhd8ed1ab_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/idna-3.10-pyhd8ed1ab_1.conda
@@ -513,7 +512,6 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/noarch/uvicorn-0.34.2-pyh31011fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/uvicorn-standard-0.34.2-h31011fe_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/uvloop-0.21.0-py310ha75aee5_1.conda
-      - conda: https://prefix.dev/meta-forge/noarch/verl-0.3.0.post1-pyh4616a5c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-20.30.0-pyhd8ed1ab_0.conda
       - conda: https://prefix.dev/meta-forge/linux-64/vllm-0.8.3-py310_cuda126_pt260_987c8b4.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/wandb-0.19.10-py310h505e2c1_0.conda
@@ -559,6 +557,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.23.0-py310ha75aee5_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
       - pypi: https://files.pythonhosted.org/packages/54/a5/91d16d65b66251c2423bfedb9219c2e803f11d91af9bfba75f05ddc33bfb/mathruler-0.1.0-py3-none-any.whl
+      - pypi: ./
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-3_kmp_llvm.conda
   build_number: 3
@@ -2904,20 +2903,6 @@ packages:
   - pkg:pypi/huggingface-hub?source=compressed-mapping
   size: 296463
   timestamp: 1744136260680
-- conda: https://conda.anaconda.org/conda-forge/noarch/hydra-core-1.3.2-pyhd8ed1ab_1.conda
-  sha256: 40b4469bd65e0156de1136ae8b265f5d2d72f14b8d431e009836d59438339ee8
-  md5: a189dd36bcaaf4c7647deb2dcb4e1b05
-  depends:
-  - antlr-python-runtime 4.9.*
-  - omegaconf >=2.2,<2.4
-  - packaging
-  - python >=3.9
-  license: MIT
-  license_family: MIT
-  purls:
-  - pkg:pypi/hydra-core?source=hash-mapping
-  size: 110015
-  timestamp: 1736934833060
 - conda: https://conda.anaconda.org/conda-forge/noarch/hyperframe-6.1.0-pyhd8ed1ab_0.conda
   sha256: 77af6f5fe8b62ca07d09ac60127a30d9069fdc3c68d6b256754d0ffb1f7779f8
   md5: 8e6923fc12f1fe8f8c4e5c9f343256ac
@@ -7701,23 +7686,15 @@ packages:
   - pkg:pypi/uvloop?source=hash-mapping
   size: 671026
   timestamp: 1730214551704
-- conda: https://prefix.dev/meta-forge/noarch/verl-0.3.0.post1-pyh4616a5c_0.conda
-  sha256: 65ea9628a1a611c2239240b32d2a4cd0d9a5b5f0711388ba4f90cbad4ff42a0e
-  depends:
-  - pandas
-  - flash-attn
-  - tensordict <=0.6.2
-  - ray-default
-  - codetiming
-  - pylatexenc
-  - hydra-core
-  - accelerate
-  - torchdata
-  - peft
-  - wandb
-  - python
-  size: 234918
-  timestamp: 1743878241656
+- pypi: ./
+  name: verl
+  version: 0.2.0.dev0
+  sha256: bb308a5d0d707bd40bb9957876e11bfd70700ae11dd6594ddd3f466641807106
+  requires_dist:
+  - pre-commit ; extra == 'dev'
+  - ruff ; extra == 'dev'
+  requires_python: '>=3.9.0'
+  editable: true
 - conda: https://conda.anaconda.org/conda-forge/noarch/virtualenv-20.30.0-pyhd8ed1ab_0.conda
   sha256: 1dbb24b144f7b8400b30cca760cdee1b7de61716cd7f06d7ea82b741645823ce
   md5: c0e0b4a09aa5a698a1bdd4ebfe28be38
