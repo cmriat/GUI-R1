@@ -1,0 +1,133 @@
+{
+  "androidcontrol_high_test": {
+    "image": "<binary data>",
+    "history": " \nStep 1: Click on the three bar menu at the top left corner of the screen\n\n",
+    "instruction": "Restore the financial report file from trash in the Google Drive  because I need to review the file's details once more.",
+    "gt_action": "click",
+    "gt_bbox": [
+      205.0,
+      652.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "android",
+    "ui_type": "click"
+  },
+  "androidcontrol_low_test": {
+    "image": "<binary data>",
+    "instruction": "Click on the podcasts",
+    "gt_action": "click",
+    "gt_bbox": [
+      455.0,
+      1212.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "android",
+    "ui_type": "click"
+  },
+  "guiact_web_test": {
+    "image": "<binary data>",
+    "history": " \nNone\n",
+    "instruction": "Explore 'G.O.P. Debate Takeaways'",
+    "gt_action": "click",
+    "gt_bbox": [
+      309.0,
+      70.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "web",
+    "ui_type": "click"
+  },
+  "guiodyssey_test": {
+    "image": "<binary data>",
+    "history": " \nStep 1: CLICK <point>[[683,321]]</point>\nStep 2: CLICK <point>[[749,810]]</point>\nStep 3: CLICK <point>[[348,232]]</point>\nStep 4: TYPE [I am happy]\nStep 5: CLICK <point>[[697,74]]</point>\nStep 6: SCROLL [DOWN]\nStep 7: CLICK <point>[[719,926]]</point>\nStep 8: SCROLL [UP]\nStep 9: CLICK <point>[[609,696]]</point>\n\n",
+    "instruction": "Use social media to post the feeling today and share it to a communication app.",
+    "gt_action": "click",
+    "gt_bbox": [
+      1556.0,
+      375.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "web",
+    "ui_type": "click"
+  },
+  "omniact_desktop_test": {
+    "image": "<binary data>",
+    "history": " \nNone\n",
+    "instruction": "inspect the immediate surroundings on the current map.",
+    "gt_action": "click",
+    "gt_bbox": [
+      2571.0,
+      37.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "desktop",
+    "ui_type": "click"
+  },
+  "omniact_web_test": {
+    "image": "<binary data>",
+    "history": " \nNone\n",
+    "instruction": "examine the items that have been added to the shopping trolley so far",
+    "gt_action": "click",
+    "gt_bbox": [
+      1287.0,
+      115.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "web",
+    "ui_type": "click"
+  },
+  "screenspot_pro_test": {
+    "image": "<binary data>",
+    "instruction": "run synthesis in vivado",
+    "gt_bbox": [
+      509.0,
+      932.0,
+      621.0,
+      961.0
+    ],
+    "group": "CAD",
+    "ui_type": "text"
+  },
+  "screenspot_test": {
+    "image": "<binary data>",
+    "instruction": "show the files in list",
+    "gt_bbox": [
+      475.0,
+      247.0,
+      722.0,
+      296.0
+    ],
+    "group": "desktop",
+    "ui_type": "text"
+  },
+  "test": {
+    "image": "<binary data>",
+    "gt_bbox": [
+      0.24765625,
+      0.2861111111111111,
+      0.3859375,
+      0.44305555555555554
+    ],
+    "instruction": "click the UI element Elizabeth Barrett Browning and Robert Browning",
+    "id": "2418",
+    "gt_action": "click",
+    "gt_input_text": "no input text",
+    "history": "None",
+    "task_type": "low"
+  },
+  "train": {
+    "image": "<binary data>",
+    "gt_bbox": [
+      0.752,
+      0.889,
+      0.817,
+      0.932
+    ],
+    "instruction": "click the UI element plateforme",
+    "id": "106068",
+    "gt_action": "click",
+    "gt_input_text": "no input text",
+    "history": "None",
+    "task_type": "low"
+  }
+}

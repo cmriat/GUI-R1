@@ -9,6 +9,7 @@ environments:
     packages:
       linux-64:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-3_kmp_llvm.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_2.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/absl-py-2.2.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/accelerate-1.5.2-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/aiohappyeyeballs-2.6.1-pyhd8ed1ab_0.conda
@@ -351,6 +352,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libxml2-2.13.7-h4bc477f_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libzlib-1.3.1-hb9d3cd8_2.conda
       - conda: https://prefix.dev/meta-forge/noarch/liger-kernel-0.5.8-pyh4616a5c_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/llguidance-0.7.19-py39h677e893_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/llvm-openmp-20.1.3-h024ca30_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/llvmlite-0.44.0-py310h1a6248f_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/lz4-c-1.10.0-h5888daf_1.conda
@@ -396,6 +398,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/openssl-3.5.0-h7b32b05_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/optree-0.15.0-py310h3788b33_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/orc-2.1.1-h2271f48_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/orjson-3.10.18-py310h505e2c1_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/outlines-0.2.3-pyh29332c3_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/outlines-core-0.1.26-py310hbf4624c_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/packaging-25.0-pyh29332c3_1.conda
@@ -437,6 +440,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/python-3.10.17-hd6af730_0_cpython.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-dateutil-2.9.0.post0-pyhff2d567_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-dotenv-1.1.0-pyh29332c3_1.conda
+      - conda: https://conda.anaconda.org/conda-forge/noarch/python-gil-3.10.17-hd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-json-logger-2.0.7-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/python-multipart-0.0.20-pyhff2d567_0.conda
       - conda: https://prefix.dev/meta-forge/linux-64/python-ninja-1.11.1.4-py310h8e7c8fa_0.conda
@@ -489,7 +493,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tbb-2021.13.0-hceb3a55_1.conda
       - conda: https://conda.anaconda.org/conda-forge/noarch/tensorboard-2.19.0-pyhd8ed1ab_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tensorboard-data-server-0.7.0-py310h6c63255_2.conda
-      - conda: https://conda.anaconda.org/conda-forge/noarch/tensordict-0.1.2-pyh6074d0b_0.conda
+      - conda: https://conda.anaconda.org/conda-forge/linux-64/tensordict-0.8.2-py310hc97bb0c_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tiktoken-0.9.0-py310h6e8e937_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tk-8.6.13-noxft_h4845f30_101.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/tokenizers-0.21.1-py310hb1c6e2c_0.conda
@@ -557,7 +561,7 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstandard-0.23.0-py310ha75aee5_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/zstd-1.5.7-hb8e6e7a_2.conda
       - pypi: https://files.pythonhosted.org/packages/54/a5/91d16d65b66251c2423bfedb9219c2e803f11d91af9bfba75f05ddc33bfb/mathruler-0.1.0-py3-none-any.whl
-      - pypi: ./
+      - pypi: .
 packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-3_kmp_llvm.conda
   build_number: 3
@@ -570,6 +574,17 @@ packages:
   purls: []
   size: 7649
   timestamp: 1741390353130
+- conda: https://conda.anaconda.org/conda-forge/noarch/_python_abi3_support-1.0-hd8ed1ab_2.conda
+  sha256: a3967b937b9abf0f2a99f3173fa4630293979bd1644709d89580e7c62a544661
+  md5: aaa2a381ccc56eac91d63b6c1240312f
+  depends:
+  - cpython
+  - python-gil
+  license: MIT
+  license_family: MIT
+  purls: []
+  size: 8191
+  timestamp: 1744137672556
 - conda: https://conda.anaconda.org/conda-forge/noarch/absl-py-2.2.0-pyhd8ed1ab_0.conda
   sha256: fc8d8b30cd573fcfd77f696b7194cc04ab4d9299780f9d3973720ab8378bfcd0
   md5: 107112a92cba7895f10a4c246c1770a1
@@ -5176,6 +5191,23 @@ packages:
   - python
   size: 76395
   timestamp: 1746017603464
+- conda: https://conda.anaconda.org/conda-forge/linux-64/llguidance-0.7.19-py39h677e893_1.conda
+  noarch: python
+  sha256: 18fd87cb937582c5d90dc43fc7742085a750c209f85bdaf54cb2cd3ef43caef3
+  md5: eb13471bc88eb181999e1ade2c57fa1d
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - _python_abi3_support 1.*
+  - cpython >=3.9
+  - libgcc >=13
+  - python
+  constrains:
+  - __glibc >=2.17
+  license: MIT
+  purls:
+  - pkg:pypi/llguidance?source=hash-mapping
+  size: 2100067
+  timestamp: 1746020406010
 - conda: https://conda.anaconda.org/conda-forge/linux-64/llvm-openmp-20.1.3-h024ca30_0.conda
   sha256: 4327a463f43b0d95ca0e5f92094383ef53fd2a91d649debfc531b941fe44fd48
   md5: c721339ea8746513e42b1233b4bbdfb0
@@ -5840,6 +5872,24 @@ packages:
   purls: []
   size: 1234106
   timestamp: 1741305395899
+- conda: https://conda.anaconda.org/conda-forge/linux-64/orjson-3.10.18-py310h505e2c1_0.conda
+  sha256: 94a87f639f087218e6040d32f0d3493dde941b4b283363ce12ea1b0421f67eec
+  md5: a3f8488ee121d289e5e41914f98d5564
+  depends:
+  - __glibc >=2.17,<3.0.a0
+  - libgcc >=13
+  - python >=3.10,<3.11.0a0
+  - python_abi 3.10.* *_cp310
+  constrains:
+  - __glibc >=2.17
+  arch: x86_64
+  platform: linux
+  license: Apache-2.0
+  license_family: Apache
+  purls:
+  - pkg:pypi/orjson?source=hash-mapping
+  size: 308832
+  timestamp: 1746202847379
 - conda: https://conda.anaconda.org/conda-forge/noarch/outlines-0.2.3-pyh29332c3_0.conda
   sha256: 4401ce8f3716a6dff312a6f80499faf3d33ba2517869863bd252eff177a8164d
   md5: cfe71f6e1bbd511b68f184381411ff64
@@ -6484,6 +6534,16 @@ packages:
   - pkg:pypi/python-dotenv?source=hash-mapping
   size: 25557
   timestamp: 1742948348635
+- conda: https://conda.anaconda.org/conda-forge/noarch/python-gil-3.10.17-hd8ed1ab_0.conda
+  sha256: 30bdd0c130bfe4af4cdd4727538f52e5463b3116b491c2182934f540e9f76ee2
+  md5: c856adbd93a57004e21cd26564f4f724
+  depends:
+  - cpython 3.10.17.*
+  - python_abi * *_cp310
+  license: Python-2.0
+  purls: []
+  size: 50498
+  timestamp: 1744323145250
 - conda: https://conda.anaconda.org/conda-forge/noarch/python-json-logger-2.0.7-pyhd8ed1ab_0.conda
   sha256: 4790787fe1f4e8da616edca4acf6a4f8ed4e7c6967aa31b920208fc8f95efcca
   md5: a61bf9ec79426938ff785eb69dbb1960
@@ -7331,20 +7391,30 @@ packages:
   - pkg:pypi/tensorboard-data-server?source=hash-mapping
   size: 3571250
   timestamp: 1728640103310
-- conda: https://conda.anaconda.org/conda-forge/noarch/tensordict-0.1.2-pyh6074d0b_0.conda
-  sha256: 33f4cfefce6be534a430836fe3cb13a9e9478c603ced64f6b021b028fcd45623
-  md5: 7b9e064cb69471cd1c75548a9e8ca631
+- conda: https://conda.anaconda.org/conda-forge/linux-64/tensordict-0.8.2-py310hc97bb0c_0.conda
+  sha256: de6583cbbbff5fd29d57134168c4f440ba078822d2e192c619008805d4a2775d
+  md5: e2c8c1f0a5a8860b00231e585437362a
   depends:
+  - __glibc >=2.17,<3.0.a0
   - cloudpickle
+  - importlib-metadata
+  - libgcc >=13
+  - libstdcxx >=13
+  - libtorch >=2.6.0,<2.7.0a0
   - numpy
-  - python >=3.8
-  - pytorch
+  - orjson
+  - packaging
+  - python >=3.10,<3.11.0a0
+  - python_abi 3.10.* *_cp310
+  - pytorch >=2.6.0,<2.7.0a0
+  arch: x86_64
+  platform: linux
   license: MIT
   license_family: MIT
   purls:
   - pkg:pypi/tensordict?source=hash-mapping
-  size: 101450
-  timestamp: 1683661448670
+  size: 575860
+  timestamp: 1746475904824
 - conda: https://conda.anaconda.org/conda-forge/linux-64/tiktoken-0.9.0-py310h6e8e937_0.conda
   sha256: aa515186acd8ebee6f92563457da8dc64e1d764ae344f5ff81b84ee139045cf8
   md5: 2aec589cdeedee4c38853d2bb643834d
@@ -7686,7 +7756,7 @@ packages:
   - pkg:pypi/uvloop?source=hash-mapping
   size: 671026
   timestamp: 1730214551704
-- pypi: ./
+- pypi: .
   name: verl
   version: 0.2.0.dev0
   sha256: bb308a5d0d707bd40bb9957876e11bfd70700ae11dd6594ddd3f466641807106

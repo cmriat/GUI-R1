@@ -1,0 +1,17 @@
+{"time":"2025-05-01T11:44:52.521842087Z","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/root/codes/GUI-R1/wandb/run-20250501_114452-cmvpoo6e/logs/debug-core.log"}
+{"time":"2025-05-01T11:44:53.033014098Z","level":"INFO","msg":"created new stream","id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:53.033058388Z","level":"INFO","msg":"stream: started","id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:53.033073646Z","level":"INFO","msg":"handler: started","stream_id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:53.033083117Z","level":"INFO","msg":"sender: started","stream_id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:53.033095704Z","level":"INFO","msg":"writer: Do: started","stream_id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:53.268885409Z","level":"ERROR","msg":"HTTP error","status":400,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-01T11:44:53.268962752Z","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 400: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"you may not log runs directly to your organization, please try using your team entity\",\"path\":[\"upsertBucket\"]}]}"}
+{"time":"2025-05-01T11:44:54.270793584Z","level":"INFO","msg":"stream: closing","id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:54.270900181Z","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-05-01T11:44:54.548389362Z","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-01T11:44:54.548474509Z","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project data-sustech-org/data-sustech not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-05-01T11:44:54.548797811Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-01T11:44:54.548829969Z","level":"INFO","msg":"handler: closed","stream_id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:54.548837721Z","level":"INFO","msg":"writer: Close: closed","stream_id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:54.548840235Z","level":"INFO","msg":"sender: closed","stream_id":"cmvpoo6e"}
+{"time":"2025-05-01T11:44:54.548995431Z","level":"INFO","msg":"stream: closed","id":"cmvpoo6e"}

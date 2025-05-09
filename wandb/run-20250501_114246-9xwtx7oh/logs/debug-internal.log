@@ -1,0 +1,17 @@
+{"time":"2025-05-01T11:42:46.154025543Z","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/root/codes/GUI-R1/wandb/run-20250501_114246-9xwtx7oh/logs/debug-core.log"}
+{"time":"2025-05-01T11:42:46.650934471Z","level":"INFO","msg":"created new stream","id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:46.65098038Z","level":"INFO","msg":"stream: started","id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:46.650998263Z","level":"INFO","msg":"writer: Do: started","stream_id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:46.651000552Z","level":"INFO","msg":"sender: started","stream_id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:46.651007176Z","level":"INFO","msg":"handler: started","stream_id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:46.883443116Z","level":"ERROR","msg":"HTTP error","status":400,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-01T11:42:46.883527153Z","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 400: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"you may not log runs directly to your organization, please try using your team entity\",\"path\":[\"upsertBucket\"]}]}"}
+{"time":"2025-05-01T11:42:47.885238567Z","level":"INFO","msg":"stream: closing","id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:47.885372615Z","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-05-01T11:42:48.164862168Z","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-01T11:42:48.164956915Z","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"project data-sustech-org/data-sustech not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-05-01T11:42:48.165296754Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-01T11:42:48.165327142Z","level":"INFO","msg":"handler: closed","stream_id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:48.165336127Z","level":"INFO","msg":"writer: Close: closed","stream_id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:48.165380795Z","level":"INFO","msg":"sender: closed","stream_id":"9xwtx7oh"}
+{"time":"2025-05-01T11:42:48.165482928Z","level":"INFO","msg":"stream: closed","id":"9xwtx7oh"}

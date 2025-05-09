@@ -1,0 +1,133 @@
+{
+  "androidcontrol_high_test": {
+    "image": "<binary data>",
+    "history": " \nStep 1: Open Etsy app.\nStep 2: Click on the search bar on the top of the screen.\n\n",
+    "instruction": "Look for the locks on the Etsy app so I can utilize them at home.",
+    "gt_action": "click",
+    "gt_bbox": [
+      560.0,
+      607.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "android",
+    "ui_type": "click"
+  },
+  "androidcontrol_low_test": {
+    "image": "<binary data>",
+    "instruction": "Click on the search icon at the bottom.",
+    "gt_action": "click",
+    "gt_bbox": [
+      333.0,
+      2268.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "android",
+    "ui_type": "click"
+  },
+  "guiact_web_test": {
+    "image": "<binary data>",
+    "history": " \nNone\n",
+    "instruction": "Register for a new account.",
+    "gt_action": "click",
+    "gt_bbox": [
+      1360.0,
+      121.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "web",
+    "ui_type": "click"
+  },
+  "guiodyssey_test": {
+    "image": "<binary data>",
+    "history": " \nStep 1: CLICK <point>[[683,321]]</point>\nStep 2: CLICK <point>[[749,810]]</point>\n\n",
+    "instruction": "Use social media to post the feeling today and share it to a communication app.",
+    "gt_action": "click",
+    "gt_bbox": [
+      768.0,
+      426.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "web",
+    "ui_type": "click"
+  },
+  "omniact_desktop_test": {
+    "image": "<binary data>",
+    "history": " \nNone\n",
+    "instruction": "look around the current map location.",
+    "gt_action": "click",
+    "gt_bbox": [
+      2571.0,
+      37.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "desktop",
+    "ui_type": "click"
+  },
+  "omniact_web_test": {
+    "image": "<binary data>",
+    "history": " \nNone\n",
+    "instruction": "while viewing various product categories, decide to resume search in the men\"s shoe selection.",
+    "gt_action": "click",
+    "gt_bbox": [
+      244.0,
+      367.0
+    ],
+    "gt_input_text": "no input text",
+    "group": "web",
+    "ui_type": "click"
+  },
+  "screenspot_pro_test": {
+    "image": "<binary data>",
+    "instruction": "add file in vivado",
+    "gt_bbox": [
+      691.0,
+      851.0,
+      805.0,
+      875.0
+    ],
+    "group": "CAD",
+    "ui_type": "text"
+  },
+  "screenspot_test": {
+    "image": "<binary data>",
+    "instruction": "safari",
+    "gt_bbox": [
+      226.0,
+      1860.0,
+      299.0,
+      1956.0
+    ],
+    "group": "desktop",
+    "ui_type": "icon"
+  },   
+  "test": {
+    "image": "<binary data>",
+    "gt_bbox": [
+      0.159,
+      0.075,
+      0.167,
+      0.091
+    ],
+    "instruction": "click the UI element Strikethrough",
+    "id": "144909",
+    "gt_action": "click",
+    "gt_input_text": "no input text",
+    "history": "None",
+    "task_type": "low"
+  },
+  "train": {
+    "image": "<binary data>",
+    "gt_bbox": [
+      0.357,
+      0.047,
+      0.373,
+      0.097
+    ],
+    "instruction": "click the UI element Footer",
+    "id": "124838",
+    "gt_action": "click",
+    "gt_input_text": "no input text",
+    "history": "None",
+    "task_type": "low"
+  }
+}

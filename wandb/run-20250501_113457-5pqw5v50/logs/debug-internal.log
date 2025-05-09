@@ -1,0 +1,17 @@
+{"time":"2025-05-01T11:34:57.379231241Z","level":"INFO","msg":"stream: starting","core version":"0.19.10","symlink path":"/root/codes/GUI-R1/wandb/run-20250501_113457-5pqw5v50/logs/debug-core.log"}
+{"time":"2025-05-01T11:34:57.90830695Z","level":"INFO","msg":"created new stream","id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:57.908365434Z","level":"INFO","msg":"stream: started","id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:57.908386028Z","level":"INFO","msg":"handler: started","stream_id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:57.908410977Z","level":"INFO","msg":"writer: Do: started","stream_id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:57.908391919Z","level":"INFO","msg":"sender: started","stream_id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:58.145913202Z","level":"ERROR","msg":"HTTP error","status":403,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-01T11:34:58.146031929Z","level":"ERROR","msg":"sender: upsertRun:","error":"failed to upsert bucket: returned error 403: {\"data\":{\"upsertBucket\":null},\"errors\":[{\"message\":\"permission denied\",\"path\":[\"upsertBucket\"],\"extensions\":{\"code\":\"PERMISSION_ERROR\"}}]}"}
+{"time":"2025-05-01T11:34:59.148589674Z","level":"INFO","msg":"stream: closing","id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:59.148820771Z","level":"ERROR","msg":"sender: upsertConfig: RunRecord is nil"}
+{"time":"2025-05-01T11:34:59.445434661Z","level":"ERROR","msg":"HTTP error","status":404,"method":"POST","url":"https://api.wandb.ai/graphql"}
+{"time":"2025-05-01T11:34:59.445593219Z","level":"ERROR","msg":"runfiles: CreateRunFiles returned error: returned error 404: {\"data\":{\"createRunFiles\":null},\"errors\":[{\"message\":\"run test/5pqw5v50 not found during createRunFiles\",\"path\":[\"createRunFiles\"]}]}"}
+{"time":"2025-05-01T11:34:59.446189394Z","level":"INFO","msg":"fileTransfer: Close: file transfer manager closed"}
+{"time":"2025-05-01T11:34:59.446228382Z","level":"INFO","msg":"handler: closed","stream_id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:59.446252395Z","level":"INFO","msg":"writer: Close: closed","stream_id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:59.446304334Z","level":"INFO","msg":"sender: closed","stream_id":"5pqw5v50"}
+{"time":"2025-05-01T11:34:59.446403795Z","level":"INFO","msg":"stream: closed","id":"5pqw5v50"}
